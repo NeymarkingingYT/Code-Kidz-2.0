@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Code Kidz – Offline Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="assets/blockly/blockly_compressed.js"></script>
+    <script src="assets/blockly/blocks_compressed.js"></script>
+    <script src="assets/blockly/javascript_compressed.js"></script>
+    <script src="assets/blockly/msg/en.js"></script>
+  </head>
+  <body>
+    <h1>Code Kidz 🧠</h1>
+    <div id="blocklyDiv" style="height: 480px; width: 100%;"></div>
+
+    <xml id="toolbox" style="display: none">
+      <category name="Logic" colour="#5C81A6">
+        <block type="controls_if"></block>
+      </category>
+      <category name="Loops" colour="#5CA65C">
+        <block type="controls_repeat_ext"></block>
+      </category>
+      <category name="Math" colour="#5C68A6">
+        <block type="math_number"></block>
+      </category>
+      <category name="Text" colour="#5CA699">
+        <block type="text"></block>
+        <block type="text_print"></block>
+      </category>
+    </xml>
+
+    <button onclick="runCode()">▶ Run Code</button>
+    <script src="blockly.js"></script>
+  </body>
+</html>
